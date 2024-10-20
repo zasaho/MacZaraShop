@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "650786702890",
+    "project_id": "maczarashop-164e5",
+    "storage_bucket": "maczarashop-164e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650786702890:android:4e161cc976c4c824d46553",
+        "android_client_info": {
+          "package_name": "com.zara.zara_shop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP1FHn8PkMikI_ga-g_FQpdkQ9yC2R8yI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
