@@ -22,15 +22,17 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     final dio = Dio();
     final client = RestClient(dio);
-    client.getHome().then((BaseModel it) => logger.i(it));
-    AdmobService.interstitial();
+    client.getHome().then((BaseModel it) => logger.i(it)).catchError((onError){
+      print(onError);
+    });
+   AdmobService.interstitial();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: AdWidget(
+         child: AdWidget(
             key: UniqueKey(), ad: AdmobService.createBannerAd()..load()),
       ),
     );
